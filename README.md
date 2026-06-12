@@ -13,6 +13,8 @@
 | `Agentic_AI_Consultant_就职与学习手册.md` | 职业总纲 | 所有人 | 先快速读一遍，建立全局地图 |
 | `Agentic_AI_Consultant_零基础学习路线.md` | 入门训练 | 非计算机新人、刚毕业学生 | 按 12 周执行，每周交付一个成果 |
 | `Agentic_AI_Consultant_专业交付教程.md` | 项目交付手册 | 技术、产品、咨询、实施、RPA、数据人员 | 按项目生命周期使用，训练真实交付能力 |
+| `AI_Solution_Consultant_个人转型教程.md` | 个人转型路线 | 有程序员背景、想转 AI Solution Consultant 的人 | 按 24 周训练，形成作品集和专业交付包 |
+| `AI_Solution_Consultant_24周学习日程.md` | 周计划执行表 | 已确定转型方向、需要按周推进的人 | 从 2026-06-15 开始，每周明确任务和交付物 |
 
 推荐顺序：
 
