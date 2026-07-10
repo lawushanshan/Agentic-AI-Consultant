@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" modified="2026-07-09T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="as-is-to-be-ai-ticket" name="As-Is To-Be AI工单流程示例">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="As-Is / To-Be 流程图示例：企业内部知识库与工单问答" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#172B4D;" vertex="1" parent="1">
+          <mxGeometry x="260" y="30" width="1080" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="用途：先把当前流程的低效点画清楚，再画引入 AI Agent / RAG / 工具调用后的目标流程。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7D6;strokeColor=#D6B656;fontSize=14;fontColor=#594300;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="880" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="asLane" value="As-Is 现状流程：人工查找、人工判断、人工回复" style="swimlane;html=1;rounded=0;horizontal=0;startSize=42;fillColor=#F8F9FA;strokeColor=#B3BAC5;fontSize=16;fontStyle=1;fontColor=#253858;" vertex="1" parent="1">
+          <mxGeometry x="60" y="160" width="1480" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="toLane" value="To-Be 目标流程：AI Agent 辅助处理，复杂问题转人工" style="swimlane;html=1;rounded=0;horizontal=0;startSize=42;fillColor=#F4F9F4;strokeColor=#82B366;fontSize=16;fontStyle=1;fontColor=#253858;" vertex="1" parent="1">
+          <mxGeometry x="60" y="470" width="1480" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="as1" value="员工提交问题 / 工单" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="140" y="240" width="150" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="as2" value="运营 / 支持人员接单" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="340" y="240" width="150" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="as3" value="人工查文档、群聊、历史工单" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="540" y="240" width="170" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="as4" value="找不到就询问专家 / 研发" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="760" y="240" width="170" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="as5" value="手工整理答案" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="980" y="240" width="150" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="as6" value="回复员工" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="240" width="130" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="as7" value="知识沉淀不稳定，重复问题继续出现" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=14;fontColor=#5F370E;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="230" width="150" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="asPain1" value="痛点：响应慢、依赖个人经验、重复劳动多" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBE6;strokeColor=#DE350B;fontSize=13;fontColor=#BF2600;" vertex="1" parent="1">
+          <mxGeometry x="535" y="335" width="390" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="to1" value="员工提交问题 / 工单" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="140" y="560" width="150" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="to2" value="AI Agent 理解意图并分类" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="340" y="560" width="170" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="to3" value="RAG 检索知识库 / 历史工单" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="560" width="170" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="to4" value="调用业务系统工具查询状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="780" y="560" width="170" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="to5" value="置信度是否足够？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="542" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="to6" value="自动生成答案并引用来源" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="530" width="170" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="to7" value="低置信度 / 高风险问题转人工审批" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="650" width="190" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="to8" value="记录日志、沉淀 FAQ、监控命中率与满意度" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="590" width="90" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="valueBox" value="目标价值：缩短响应时间，减少重复人工，保留人工兜底，形成可持续优化的数据闭环。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAE6FF;strokeColor=#6554C0;fontSize=13;fontColor=#403294;" vertex="1" parent="1">
+          <mxGeometry x="340" y="700" width="610" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="e_as1" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="as1" target="as2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_as2" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="as2" target="as3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_as3" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="as3" target="as4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_as4" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="as4" target="as5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_as5" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="as5" target="as6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_as6" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="as6" target="as7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to1" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="to1" target="to2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to2" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="to2" target="to3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to3" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="to3" target="to4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to4" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="to4" target="to5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to5_yes" value="是" style="endArrow=block;html=1;rounded=0;strokeColor=#2E7D32;fontSize=12;" edge="1" parent="1" source="to5" target="to6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to5_no" value="否" style="endArrow=block;html=1;rounded=0;strokeColor=#BF2600;fontSize=12;" edge="1" parent="1" source="to5" target="to7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to6" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="to6" target="to8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_to7" style="endArrow=block;html=1;rounded=0;strokeColor=#42526E;" edge="1" parent="1" source="to7" target="to8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
