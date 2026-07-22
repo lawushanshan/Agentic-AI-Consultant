@@ -580,8 +580,6 @@ xx电子商务 采购负责人 [如有具体姓名请填写，否则可写“您
 }
 ```
 
-
-
 * owner：取负责人，如果取不到，默认赋值待确认；
 * task：待办任务描述的缩写；
 * due_date：如果能够计算出日期，就使用时期加（原日期）作为值，否则使用原日期作为值，还没有就使用待确认；
@@ -594,10 +592,8 @@ owner 或 due_date 缺失时，分别填“待确认”，status 为“信息不
 仅当 task、owner、due_date 均明确时，status 为“明确”。
 不能从会议日期推算相对日期时，due_date 填“待确认”。
 
-
 我学习到的地方？
 原始数据可以使用完整的一个字段存储，用户保留原始信息
-
 
 案例 7：简历信息提取
 
@@ -612,6 +608,68 @@ owner 或 due_date 缺失时，分别填“待确认”，status 为“信息不
 }
 
 输入：张晨，2022 年毕业于某大学软件工程专业。2022 年 7 月至今从事 .NET 后端开发，熟悉 ASP.NET Core、SQL Server、Redis，参与过 CRM 系统开发。
+
+输出：
+
+{
+"name": "张晨",
+"years\_of\_experience": 4,
+"skills": ["[ASP.NET](https://asp.net/) Core", "SQL Server", "Redis"],
+"education": "某大学软件工程专业",
+"missing\_fields": []
+}
+
+优化后的Prompt
+
+```
+角色：你是招聘信息提取助手，只提取简历中明确出现的事实，不评价候选人是否适合岗位。
+
+请严格输出 JSON：
+{
+"name": "",
+"years_of_experience": null,
+"skills": [],
+"education": "",
+"missing_fields": [],
+"project experience":[],
+}
+规则：
+name：从姓名中提取；
+years_of_experience：工作年限，从开始从事工作开始到计算到现在的时间点；
+skills：应聘者技能组合；
+education：应聘者学历，小学||初中||高中||大专||本科||研究色||博士；
+project experience：项目经验，
+
+输入：张晨，2022 年毕业于某大学软件工程专业。2022 年 7 月至今从事 .NET 后端开发，熟悉 ASP.NET Core、SQL Server、Redis，参与过 CRM 系统开发。 
+```
+
+优化后的结果如下
+
+{
+"name": "张晨",
+"years_of_experience": 4,
+"skills": ["ASP.NET Core", "SQL Server", "Redis"],
+"education": "",
+"missing_fields": ["education"],
+"project experience": ["CRM系统开发"]
+}
+
+请评论一下还能优化的点
+
+规则补充：
+
+- 只提取原文明确事实，不补全学历层级。
+- 若未提供 reference_date，或入职日期精确到“月”而非“日”，
+  years_of_experience 返回 null，不自行估算。
+- project_experience 保留原文事实描述，不将其扩写成项目成果。
+- missing_fields 只列出业务确实需要、但输入未提供的字段。
+
+我学习到的？
+
+1. 在日期计算的时候，一定要提供精确的计算规则，让AI懂得如何处理字段
+2. 在处理学历的时候，还要提取专业和大学
+3. 尽量保留原文提取，不做处理；
+
 
 案例 8：客户投诉分级
 
