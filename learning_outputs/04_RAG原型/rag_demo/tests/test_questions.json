@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "created": "2026-08-10",
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "员工入职满3年，年假有几天？员工请假需要提前几天申请？",
+      "expected_source": "员工请假制度.md",
+      "type": "normal",
+      "expected_keywords": ["年假", "提前"]
+    },
+    {
+      "id": "Q2",
+      "question": "请事假需要提前多久申请？",
+      "expected_source": "员工请假制度.md",
+      "type": "normal",
+      "expected_keywords": ["提前"]
+    },
+    {
+      "id": "Q3",
+      "question": "请假4天需要经过哪些审批人?",
+      "expected_source": "员工请假制度.md",
+      "type": "normal",
+      "expected_keywords": ["审批"]
+    },
+    {
+      "id": "Q4",
+      "question": "考勤异常申诉的流程是什么?",
+      "expected_source": null,
+      "type": "no_answer",
+      "expected_keywords": ["无法回答", "无法确认"]
+    },
+    {
+      "id": "Q5",
+      "question": "去上海出差，住宿费最高可以报销多少？售后服务响应时间是多少？",
+      "expected_source": "报销流程说明.md",
+      "type": "normal",
+      "expected_keywords": ["住宿", "报销"]
+    },
+    {
+      "id": "Q6",
+      "question": "费用发生后最晚多久要提交报销申请？",
+      "expected_source": "报销流程说明.md",
+      "type": "normal",
+      "expected_keywords": ["15", "自然日"]
+    },
+    {
+      "id": "Q7",
+      "question": "报销电子发票时需要注意什么？",
+      "expected_source": "报销流程说明.md",
+      "type": "normal",
+      "expected_keywords": ["发票", "验真"]
+    },
+    {
+      "id": "Q8",
+      "question": "采购固定资产的报销流程是怎样的?",
+      "expected_source": null,
+      "type": "no_answer",
+      "expected_keywords": ["无法回答", "无法确认"]
+    },
+    {
+      "id": "Q9",
+      "question": "新疆地区包邮门槛是多少？",
+      "expected_source": "客户常见问题.md",
+      "type": "normal",
+      "expected_keywords": ["199"]
+    },
+    {
+      "id": "Q10",
+      "question": "忘记登录密码如何重置？",
+      "expected_source": "客户常见问题.md",
+      "type": "normal",
+      "expected_keywords": ["密码", "重置"]
+    },
+    {
+      "id": "Q11",
+      "question": "客服人工服务的时间是几点到几点？",
+      "expected_source": "客户常见问题.md",
+      "type": "normal",
+      "expected_keywords": ["9:00", "21:00"]
+    },
+    {
+      "id": "Q12",
+      "question": "如何申请开具增值税专用发票？",
+      "expected_source": null,
+      "type": "no_answer",
+      "expected_keywords": ["无法回答", "无法确认"]
+    },
+    {
+      "id": "Q13",
+      "question": "Web端快速新建任务的快捷键是什么？",
+      "expected_source": "产品使用手册.md",
+      "type": "normal",
+      "expected_keywords": ["Ctrl"]
+    },
+    {
+      "id": "Q14",
+      "question": "如何生成会议纪要？",
+      "expected_source": "产品使用手册.md",
+      "type": "normal",
+      "expected_keywords": ["AI", "录音", "纪要"]
+    },
+    {
+      "id": "Q15",
+      "question": "员工离职后，账号和数据怎么处理？",
+      "expected_source": "产品使用手册.md",
+      "type": "normal",
+      "expected_keywords": ["冻结", "移交"]
+    },
+    {
+      "id": "Q16",
+      "question": "产品支持对接企业微信吗？",
+      "expected_source": "产品使用手册.md",
+      "type": "normal",
+      "expected_keywords": ["钉钉", "飞书", "SSO"]
+    },
+    {
+      "id": "Q17",
+      "question": "智能办公设备的主板保修期是多久？",
+      "expected_source": "售后服务规则.md",
+      "type": "normal",
+      "expected_keywords": ["2年", "主板"]
+    },
+    {
+      "id": "Q18",
+      "question": "过保产品检测后用户放弃维修，需要收费吗？",
+      "expected_source": "售后服务规则.md",
+      "type": "normal",
+      "expected_keywords": ["30", "检测费"]
+    },
+    {
+      "id": "Q19",
+      "question": "七天无理由退货的运费由谁承担？",
+      "expected_source": "售后服务规则.md",
+      "type": "normal",
+      "expected_keywords": ["买家", "运费"]
+    },
+    {
+      "id": "Q20",
+      "question": "海外用户如何申请售后维修？",
+      "expected_source": null,
+      "type": "no_answer",
+      "expected_keywords": ["无法回答", "无法确认"]
+    }
+  ]
+}
