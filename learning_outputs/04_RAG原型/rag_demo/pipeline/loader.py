@@ -7,7 +7,7 @@ def load_kb_documents(docs_dir: str) -> list[Document]:
         docs_dir,
         glob="**/*.md",
         loader_cls=TextLoader,
-        loader_kwargs={"autodetect_encoding": True},
+        loader_kwargs={"encoding": "utf-8"},
     )
     docs = loader.load()
     print(f"[loader] 加载了 {len(docs)} 篇文档")

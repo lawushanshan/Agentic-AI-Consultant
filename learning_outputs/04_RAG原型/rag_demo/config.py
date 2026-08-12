@@ -11,7 +11,7 @@ class Config:
     DEEPSEEK_BASE_URL: str = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
     DEEPSEEK_MODEL: str = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
 
-    EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "paraphrase-multilingual-MiniLM-L12-v2")
+    EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", os.path.join(BASE_DIR, "models", "paraphrase-multilingual-MiniLM-L12-v2"))
 
     CHUNK_SIZE: int = int(os.getenv("CHUNK_SIZE", "300"))
     CHUNK_OVERLAP: int = int(os.getenv("CHUNK_OVERLAP", "50"))
