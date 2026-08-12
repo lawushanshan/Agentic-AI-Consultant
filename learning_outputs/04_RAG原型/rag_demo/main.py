@@ -26,12 +26,15 @@ def build_index(config: Config):
 
 
 def ask_question(question: str, config: Config) -> dict:
+    # 从向量库中加载数据
     vector_store = load_vector_store(config)
+    # 根据问题进行检索
     retrieved = retrieve(question, vector_store, config)
 
+    # 判断是否拒答
     if should_refuse(retrieved):
         return format_refusal()
-
+    # 生成回答
     return generate_answer(question, retrieved, config)
 
 

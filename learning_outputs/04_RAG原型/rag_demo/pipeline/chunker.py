@@ -31,6 +31,7 @@ def chunk_documents(
     chunk_size: int = 300,
     chunk_overlap: int = 50,
 ) -> list[Document]:
+    # 创建中文分割器
     splitter = create_splitter(chunk_size, chunk_overlap)
     chunks = splitter.split_documents(docs)
     print(f"[chunker] 切分完成: {len(docs)} 篇文档 -> {len(chunks)} 个片段")
